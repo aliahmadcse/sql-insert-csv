@@ -20,14 +20,14 @@ def read(conn):
 
 def write(conn):
     cursor = conn.cursor()
-    with open("movies.csv", "r") as file:
+    with open("fake_apps.csv", "r") as file:
         reader = csv.reader(file)
         firstLine = True
         for row in reader:
             if firstLine:
                 firstLine = False
                 continue
-            sql = f"""INSERT INTO movies (id, name, genre, year, imdb_rating) VALUES (
+            sql = f"""INSERT INTO fake_apps (id, name, category, downloads, price) VALUES (
                 {int(row[0])}, '{row[1]}', '{row[2]}', {0 if row[3]=='' else int(row[3])},{0 if row[4]=='' else float(row[4])}
                 );"""
             print(sql)
