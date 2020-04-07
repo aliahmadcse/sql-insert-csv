@@ -6,6 +6,8 @@
 
 2. Install dependencies using `pipenv install`
 
-3. Replace movies.csv from your own file
+3. Change **config.py** according to your requirements
 
-4. Run `python3 app.py`
+4. Replace movies.csv from your own file
+
+5. Run `python3 app.py`
