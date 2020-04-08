@@ -37,7 +37,7 @@ def write(conn):
 
 
 write(conn)
-# read(conn)
+read(conn)
 
 conn.close()
 
