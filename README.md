@@ -1,4 +1,4 @@
-# INSERT data into SQL-SERVER from a csv file
+# INSERT data into MS-SQL-SERVER from a csv file
 
 ## Set up
 
